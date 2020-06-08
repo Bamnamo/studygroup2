@@ -33,6 +33,7 @@ class MovieServiceTest {
     @Test
     @DisplayName("평점 높은 순 정렬")
     void arranged_well_in_user_ratings() {
+
         //given
         float expectedUserRanking = 9.7f;
         Mockito.when(movieRepository.findByQuery(any())).thenReturn(getStubMovieList());
